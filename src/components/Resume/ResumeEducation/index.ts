@@ -1,0 +1,1 @@
+export { ResumeEducation } from './ResumeEducation'

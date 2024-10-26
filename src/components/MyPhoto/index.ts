@@ -1,0 +1,1 @@
+export { MyPhoto } from './MyPhoto'
