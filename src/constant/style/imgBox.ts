@@ -12,4 +12,12 @@ export const ImgBox = styled.div`
    justify-content: center;
    overflow: hidden;
    transition: 1s;
+   @media screen and (max-width: 768px) {
+      width: 30rem;
+      height: 30rem;
+   }
+   @media screen and (max-width: 400px) {
+      width: 20rem;
+      height: 20rem;
+   }
 `

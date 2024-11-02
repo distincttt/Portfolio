@@ -1,6 +1,6 @@
 import { works } from '../../../constant/works'
 
-import { P } from '../PortfolioStyle'
+import { PPortfolio } from '../PortfolioStyle'
 import {
    A,
    H4PortfolioWork,
@@ -26,14 +26,14 @@ export const PortfolioWork = ({ active }: { active: boolean }): JSX.Element => {
                <Info>
                   <H4PortfolioWork>{name}</H4PortfolioWork>
                   <Tech>
-                     <P>{tech}</P>
+                     <PPortfolio>{tech}</PPortfolio>
                   </Tech>
                   <IconBox>
-                     <A href={hrefDeploy}>
-                        <IPortfolioWork className='bx bx-arrow-back'></IPortfolioWork>
+                     <A href={hrefDeploy} target='_blank'>
+                        <IPortfolioWork className='bx bxs-hand-up'></IPortfolioWork>
                         <TooltipPortfolioWork>Preview</TooltipPortfolioWork>
                      </A>
-                     <A href={hrefGithub}>
+                     <A href={hrefGithub} target='_blank'>
                         <IPortfolioWork className='bx bxl-github'></IPortfolioWork>
                         <TooltipPortfolioWork>Github Repository</TooltipPortfolioWork>
                      </A>

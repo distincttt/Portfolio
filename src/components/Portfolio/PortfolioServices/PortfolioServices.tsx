@@ -1,6 +1,6 @@
 import { services } from '../../../constant/services'
 
-import { P } from '../PortfolioStyle'
+import { PPortfolio } from '../PortfolioStyle'
 import {
    H4PortfolioServices,
    IconBox,
@@ -18,7 +18,7 @@ export const PortfolioServices = ({ active }: { active: boolean }): JSX.Element 
                   <IPortfolioServices className={icon}></IPortfolioServices>
                </IconBox>
                <H4PortfolioServices>{name}</H4PortfolioServices>
-               <P>{text}</P>
+               <PPortfolio>{text}</PPortfolio>
             </TabItemPortfolioServices>
          ))}
       </TabGridPortfolioServices>

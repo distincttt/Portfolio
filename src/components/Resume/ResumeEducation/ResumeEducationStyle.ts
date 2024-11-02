@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-import { H4 } from '../../../constant/style'
+import { H4, I } from '../../../constant/style'
+import { PResume } from '../ResumeStyle'
 
 export const H4ResumeEducation = styled(H4)`
    &:nth-child(1),
@@ -27,8 +28,21 @@ export const H4ResumeEducation = styled(H4)`
    }
 `
 export const Ul = styled.ul`
-   padding: 1.5rem;
+   padding: 0.3rem;
+   list-style: none;
 `
 export const Li = styled.li`
+   font-size: 1.2rem;
+   padding-top: 0.3rem;
+`
+export const PResumeEducation = styled(PResume)`
    font-size: 1.4rem;
+`
+export const LabelResumeEducation = styled.label`
+   display: flex;
+   gap: 0.5rem;
+`
+export const IResumeEducation = styled(I)`
+   position: relative;
+   top: 0.3rem;
 `

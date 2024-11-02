@@ -1,30 +1,24 @@
 import { useState } from 'react'
+
 import { Navbar } from '../Navbar'
 import { Wrapper } from '../Wrapper'
 
+import { tabInitial } from '../../constant/tabInitial'
+
 export const App = (): JSX.Element => {
-   const [lis, setLis] = useState([
-      { name: 'Главная', className: 'bx bx-home alt', active: true, rotate: 'rotateY(0deg)' },
-      { name: 'Обо мне', className: 'bx bx-user', active: false, rotate: 'rotateY(-90deg)' },
-      { name: 'Резюме', className: 'bx bx-detail', active: false, rotate: 'rotateY(-180deg)' },
-      {
-         name: 'Портфолио',
-         className: 'bx bx-briefcase',
-         active: false,
-         rotate: 'rotateY(-270deg)',
-      },
-   ])
+   const [tabs, setTabs] = useState(tabInitial)
 
    const onClick = (key: number) => {
-      setLis(
-         lis.map((li, idx) => (idx === key ? { ...li, active: true } : { ...li, active: false })),
+      setTabs((prevTabs) =>
+         prevTabs.map((tab, idx) => ({ ...tab, active: idx === key ? true : false })),
       )
    }
 
+   const rotate = tabs.find((tab) => tab.active === true)?.rotate ?? 'rotateY(0deg)'
    return (
       <>
-         <Wrapper lis={lis} />
-         <Navbar lis={lis} onClick={onClick} />
+         <Wrapper rotate={rotate} />
+         <Navbar tabs={tabs} onClick={onClick} />
       </>
    )
 }

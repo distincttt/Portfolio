@@ -63,10 +63,13 @@ export const Tech = styled.div`
    margin-bottom: 1rem;
 `
 export const IconBox = styled.div``
-export const TooltipPortfolioWork = styled(Tooltip)``
+export const TooltipPortfolioWork = styled(Tooltip)`
+   top: 6rem;
+`
 export const IPortfolioWork = styled(I)``
 export const A = styled.a`
    position: relative;
+   margin-right: 1rem;
    display: inline-flex;
    padding: 1rem;
    background: var(--white-color);
@@ -81,11 +84,8 @@ export const A = styled.a`
          visibility: visible;
          opacity: 1;
       }
-   }
-   &:nth-child(1) {
-      margin-right: 1rem;
       ${IPortfolioWork} {
-         transform: rotate(135deg);
+         animation: animate-icon 1.5s ease-in-out;
       }
    }
 `

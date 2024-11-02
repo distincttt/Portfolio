@@ -1,5 +1,6 @@
-export type { Lis } from './lis'
-export type { Li } from './lis'
+export type { Tab, Tabs } from './tabs'
 export type { Works } from './works'
 export type { Services } from './services'
 export type { ResumeSkills } from './resumeSkills'
+export type { Scis } from './scis'
+export type { Infos } from './infos'

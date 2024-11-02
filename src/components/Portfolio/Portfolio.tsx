@@ -11,13 +11,13 @@ export const Portfolio = (): JSX.Element => {
       { text: 'Мои Проекты', active: true },
       { text: 'Мои Услуги', active: false },
    ])
+
    const onClick = (key: number) => {
-      setTabs(
-         tabs.map((tab, idx) =>
-            idx === key ? { ...tab, active: true } : { ...tab, active: false },
-         ),
+      setTabs((prevTabs) =>
+         prevTabs.map((tab, idx) => ({ ...tab, active: idx === key ? true : false })),
       )
    }
+
    return (
       <PortfolioContainer>
          <H2>Портфолио</H2>

@@ -1,7 +1,8 @@
-import { Btn, I, P } from '../../constant/style'
-
 import { MyPhoto } from '../MyPhoto'
 
+import { scis } from '../../constant/scis'
+
+import { Btn, I, P } from '../../constant/style'
 import {
    A,
    BtnSciWrapper,
@@ -32,22 +33,16 @@ export const Home = (): JSX.Element => {
                   Скачать CV
                </Btn>
                <SciWrapper>
-                  <A href='https://github.com/distincttt?tab=repositories' target='_blank'>
-                     <I className='bx bxl-github' />
-                     <TooltipHome>Github</TooltipHome>
-                  </A>
-                  <A href='https://t.me/distincttt' target='_blank'>
-                     <I className='bx bxl-telegram' />
-                     <TooltipHome>Telegram</TooltipHome>
-                  </A>
-                  <A href='mailto:ilushakuzmin7@gmail.com' target='_blank'>
-                     <I className='bx bxl-gmail' />
-                     <TooltipHome>Gmail</TooltipHome>
-                  </A>
+                  {scis.map(({ href, className, name }) => (
+                     <A href={href} target='_blank'>
+                        <I className={className} />
+                        <TooltipHome>{name}</TooltipHome>
+                     </A>
+                  ))}
                </SciWrapper>
             </BtnSciWrapper>
          </HomeInfo>
-         <MyPhoto page={'Home'} />
+         <MyPhoto src={'images/myPhoto.png'} />
       </HomeContainer>
    )
 }

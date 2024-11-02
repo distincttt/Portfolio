@@ -14,6 +14,13 @@ export const NavbarWrapper = styled.nav`
    z-index: 1;
    animation: animate-nav 1s ease-in-out backwards;
    animation-delay: 4s;
+   @media screen and (max-width: 768px) {
+      bottom: 0;
+   }
+   @media screen and (max-width: 400px) {
+      width: 100%;
+      border-radius: 0;
+   }
 `
 export const Ul = styled.ul`
    display: flex;

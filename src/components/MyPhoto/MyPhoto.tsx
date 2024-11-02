@@ -1,10 +1,10 @@
 import { Img, ImgBoxWrapper, ImgWrapper } from './MyPhotoStyle'
 
-export const MyPhoto = ({ page }: { page: string }): JSX.Element => {
+export const MyPhoto = ({ src }: { src: string }): JSX.Element => {
    return (
       <ImgWrapper>
-         <ImgBoxWrapper $page={page}>
-            <Img src='images/myPhoto2.png' alt='Какой-то крассавчик' />
+         <ImgBoxWrapper>
+            <Img src={src} alt='Какой-то крассавчик' />
          </ImgBoxWrapper>
       </ImgWrapper>
    )

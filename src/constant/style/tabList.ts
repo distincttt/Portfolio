@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const TabList = styled.div`
+export const TabList = styled.li`
    display: flex;
    align-items: center;
    width: 100%;

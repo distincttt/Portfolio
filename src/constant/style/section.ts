@@ -10,4 +10,7 @@ export const Section = styled.section`
    &:nth-child(even) {
       background: var(--second-bg-color);
    }
+   @media screen and (max-width: 992px) {
+      padding: 0 4%;
+   }
 `
