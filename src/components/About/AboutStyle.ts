@@ -56,6 +56,9 @@ export const AboutInfoUlWrapper = styled.div`
 export const LabelAbout = styled.label`
    display: flex;
    gap: 0.5rem;
+   @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+   }
 `
 export const IAbout = styled(I)`
    position: relative;
