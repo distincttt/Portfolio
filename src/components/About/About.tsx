@@ -16,6 +16,7 @@ import {
    IAbout,
    AboutInfoUlWrapper,
    LabelAbout,
+   PAbout,
 } from './AboutStyle'
 
 export const About = (): JSX.Element => {
@@ -25,7 +26,8 @@ export const About = (): JSX.Element => {
          <AboutInfo>
             <H2About>Обо мне</H2About>
             <H3>Frontend Developer</H3>
-            <P>Мой технологический стэк: React, TypeScript, Redux Toolkit, styled-components </P>
+            <PAbout>Мой технологический стэк: </PAbout>
+            <PAbout>React, TypeScript, Redux Toolkit, styled-components</PAbout>
             <AboutInfoWrapper>
                {infosAbout.map(({ name, lis }) => (
                   <AboutInfoUlWrapper>

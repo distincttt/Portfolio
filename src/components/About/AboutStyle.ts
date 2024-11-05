@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Btn, H2, I, Section, Tooltip } from '../../constant/style'
+import { Btn, H2, I, P, Section, Tooltip } from '../../constant/style'
 
 export const AboutContainer = styled(Section)`
    display: flex;
@@ -31,19 +31,30 @@ export const Ul = styled.ul`
    list-style: none;
 `
 export const Li = styled.li`
-   font-size: 1.2rem;
-   padding-top: 0.3rem;
+   font-size: 1.3rem;
+   padding-top: 0.5rem;
+   @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+   }
 `
 export const TooltipAbout = styled(Tooltip)`
    top: 5rem;
 `
 export const BtnAbout = styled(Btn)`
    position: relative;
+   top: -6rem;
+   left: 40rem;
    &:hover {
       ${TooltipAbout} {
          visibility: visible;
          opacity: 1;
       }
+   }
+   @media screen and (max-width: 1200px) {
+      left: 35rem;
+   }
+   @media screen and (max-width: 400px) {
+      left: 25rem;
    }
 `
 export const AboutInfoWrapper = styled.div`
@@ -56,11 +67,11 @@ export const AboutInfoUlWrapper = styled.div`
 export const LabelAbout = styled.label`
    display: flex;
    gap: 0.5rem;
-   @media screen and (max-width: 768px) {
-      font-size: 0.9rem;
-   }
 `
 export const IAbout = styled(I)`
    position: relative;
    top: 0.3rem;
+`
+export const PAbout = styled(P)`
+   margin: 1rem 0 0 0;
 `

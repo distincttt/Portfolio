@@ -32,7 +32,6 @@ export const Ul = styled.ul`
    list-style: none;
 `
 export const Li = styled.li`
-   font-size: 1.2rem;
    padding-top: 0.3rem;
 `
 export const PResumeEducation = styled(PResume)`
