@@ -32,8 +32,8 @@ export const Home = (): JSX.Element => {
                   Скачать CV
                </Btn>
                <SciWrapper>
-                  {scis.map(({ href, className, name }) => (
-                     <A href={href} target='_blank'>
+                  {scis.map(({ href, className, name }, key) => (
+                     <A key={key} href={href} target='_blank'>
                         <I className={className} />
                         <TooltipHome>{name}</TooltipHome>
                      </A>

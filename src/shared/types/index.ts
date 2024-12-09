@@ -1,6 +1,6 @@
 export type { Tab, Tabs } from './tabs'
 export type { Works } from './works'
-export type { Services } from './services'
+export type { Skills } from './skills'
 export type { ResumeSkills } from './resumeSkills'
 export type { Scis } from './scis'
 export type { Infos } from './infos'

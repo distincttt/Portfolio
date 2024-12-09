@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { PortfolioWork } from './PortfolioWork'
-import { PortfolioServices } from './PortfolioServices'
+import { PortfolioExperience } from './PortfolioExperince'
 
 import { H2, TabBox, TabWrapper } from '../../constant/style'
 import { PortfolioContainer, H3Portfolio, TabListPortfolio } from './PortfolioStyle'
@@ -9,7 +9,7 @@ import { PortfolioContainer, H3Portfolio, TabListPortfolio } from './PortfolioSt
 export const Portfolio = (): JSX.Element => {
    const [tabs, setTabs] = useState([
       { text: 'Мои Проекты', active: true },
-      { text: 'Мои Услуги', active: false },
+      { text: 'Мой Опыт', active: false },
    ])
 
    const onClick = (key: number) => {
@@ -30,7 +30,7 @@ export const Portfolio = (): JSX.Element => {
          </TabBox>
          <TabWrapper>
             <PortfolioWork active={tabs[0].active} />
-            <PortfolioServices active={tabs[1].active} />
+            <PortfolioExperience active={tabs[1].active} />
          </TabWrapper>
       </PortfolioContainer>
    )

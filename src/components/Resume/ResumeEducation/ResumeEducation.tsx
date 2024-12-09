@@ -1,7 +1,5 @@
-import { TabGrid, TabItem } from '../../../constant/style'
-
+import { H4EducationAndSkills, TabGrid, TabItem } from '../../../constant/style'
 import {
-   H4ResumeEducation,
    IResumeEducation,
    LabelResumeEducation,
    Li,
@@ -13,9 +11,9 @@ export const ResumeEducation = ({ active }: { active: boolean }): JSX.Element =>
    return (
       <TabGrid $active={active}>
          <TabItem>
-            <H4ResumeEducation>2016-2017</H4ResumeEducation>
-            <H4ResumeEducation>Курсы по программированию</H4ResumeEducation>
-            <H4ResumeEducation>ИТМО, Программирование</H4ResumeEducation>
+            <H4EducationAndSkills>2016-2017</H4EducationAndSkills>
+            <H4EducationAndSkills>Курсы по программированию</H4EducationAndSkills>
+            <H4EducationAndSkills>ИТМО, Программирование</H4EducationAndSkills>
             <PResumeEducation>
                Прошёл базовый курс обучения программы профессиональной подготовки по профессии
                "Оператор электронно-вычислительных и вычислительных машин", изучил следующие
@@ -74,9 +72,9 @@ export const ResumeEducation = ({ active }: { active: boolean }): JSX.Element =>
             </PResumeEducation>
          </TabItem>
          <TabItem>
-            <H4ResumeEducation>2019-2023</H4ResumeEducation>
-            <H4ResumeEducation>Высшее образование </H4ResumeEducation>
-            <H4ResumeEducation>ГУАП, 09.03.02</H4ResumeEducation>
+            <H4EducationAndSkills>2019-2023</H4EducationAndSkills>
+            <H4EducationAndSkills>Высшее образование </H4EducationAndSkills>
+            <H4EducationAndSkills>ГУАП, 09.03.02</H4EducationAndSkills>
             <PResumeEducation>
                Институт Информационных систем и технологий является ведущим в университете в области
                компьютерных наук и их приложений. Там я изучил основы программирования на различных

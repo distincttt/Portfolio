@@ -29,12 +29,12 @@ export const About = (): JSX.Element => {
             <PAbout>Мой технологический стэк: </PAbout>
             <PAbout>React, TypeScript, Redux Toolkit, styled-components</PAbout>
             <AboutInfoWrapper>
-               {infosAbout.map(({ name, lis }) => (
-                  <AboutInfoUlWrapper>
+               {infosAbout.map(({ name, lis }, key) => (
+                  <AboutInfoUlWrapper key={key}>
                      <Ul>
                         <P>{name}</P>
-                        {lis.map((li) => (
-                           <Li>
+                        {lis.map((li, key) => (
+                           <Li key={key}>
                               <LabelAbout>
                                  <IAbout className='bx bx-chevron-right'></IAbout>
                                  {li}
