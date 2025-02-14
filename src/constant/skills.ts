@@ -2,7 +2,7 @@ import { Skills } from '../shared/types'
 
 export const skills: Skills = [
    {
-      date: 'Декабрь 2023 - Настоящее время',
+      date: 'Декабрь 2022 - Настоящее время',
       name: 'Fronted-разработчик',
       company: 'Oscar (Муза)',
       text: [
