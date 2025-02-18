@@ -12,4 +12,4 @@ yarn run dev
 
 ## Link to deployed app
 
-https://forest-app-ecru.vercel.app/
+https://portfolio-kuzmin.vercel.app/
