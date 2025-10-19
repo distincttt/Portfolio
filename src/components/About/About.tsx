@@ -29,7 +29,7 @@ export const About = (): JSX.Element => {
             <PAbout>Мой технологический стэк: </PAbout>
             <PAbout>React, TypeScript, Redux Toolkit, styled-components</PAbout>
             <AboutInfoWrapper>
-               {infosAbout.map(({ name, lis }, key) => (
+               {infosAbout.map(({ name, lis, btn }, key) => (
                   <AboutInfoUlWrapper key={key}>
                      <Ul>
                         <P>{name}</P>
@@ -42,16 +42,21 @@ export const About = (): JSX.Element => {
                            </Li>
                         ))}
                      </Ul>
+                     {btn && (
+                        <BtnAbout
+                           href={
+                              btn.href ||
+                              'https://spb.hh.ru/resume/33b6ab07ff096934a50039ed1f734131326768'
+                           }
+                           target='_blank'
+                        >
+                           {btn.text || 'Ещё обо мне'}
+                           <TooltipAbout>{btn.tooltipText || 'HeadHunter'}</TooltipAbout>
+                        </BtnAbout>
+                     )}
                   </AboutInfoUlWrapper>
                ))}
             </AboutInfoWrapper>
-            <BtnAbout
-               href='https://spb.hh.ru/resume/33b6ab07ff096934a50039ed1f734131326768'
-               target='_blank'
-            >
-               Ещё обо мне
-               <TooltipAbout>HeadHunter</TooltipAbout>
-            </BtnAbout>
          </AboutInfo>
       </AboutContainer>
    )

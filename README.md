@@ -5,7 +5,7 @@ React + TypeScript + styled-component
 ## To run locally
 
 ```bash
-git clone tps://github.com/distincttt/Porfolio.git
+git clone https://github.com/distincttt/Porfolio.git
 yarn install
 yarn run dev
 ```

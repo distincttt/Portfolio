@@ -41,20 +41,17 @@ export const TooltipAbout = styled(Tooltip)`
    top: 5rem;
 `
 export const BtnAbout = styled(Btn)`
+   width: 140px;
+   align-self: end;
    position: relative;
-   top: -6rem;
-   left: 40rem;
    &:hover {
       ${TooltipAbout} {
          visibility: visible;
          opacity: 1;
       }
    }
-   @media screen and (max-width: 1200px) {
-      left: 35rem;
-   }
-   @media screen and (max-width: 400px) {
-      left: 25rem;
+   @media screen and (min-width: 1200px) {
+      width: 166px;
    }
 `
 export const AboutInfoWrapper = styled.div`
@@ -63,6 +60,9 @@ export const AboutInfoWrapper = styled.div`
 `
 export const AboutInfoUlWrapper = styled.div`
    width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 `
 export const LabelAbout = styled.label`
    display: flex;

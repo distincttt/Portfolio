@@ -8,11 +8,15 @@ export const TabGridPortfolioSkill = styled(TabGrid)`
    height: 100%;
 `
 export const TabItemPortfolioSkill = styled(TabItem)`
-   width: 50%;
+   width: 100%;
    margin: 0 auto;
    margin-top: 10rem;
    padding: 4rem;
    gap: 1rem;
+
+   @media screen and (min-width: 1200px) {
+      width: 50%;
+   }
 `
 export const IPortfolioSkill = styled(I)`
    font-size: 1.4rem;

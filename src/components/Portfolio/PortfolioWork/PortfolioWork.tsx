@@ -21,7 +21,7 @@ export const PortfolioWork = ({ active }: { active: boolean }): JSX.Element => {
          {works.map(({ name, img, tech, hrefGithub, hrefDeploy }, key) => (
             <TabItemPortfolioWork key={key}>
                <ImgBox>
-                  <Img src={`images/${img}.jpg`} alt='Проект 1' />
+                  <Img src={`images/${img}.jpg`} alt={`Проект ${key + 1}`} />
                </ImgBox>
                <Info>
                   <H4PortfolioWork>{name}</H4PortfolioWork>

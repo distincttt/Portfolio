@@ -27,6 +27,13 @@ export const works: Works = [
       img: 'project4',
       tech: 'React, TypeScript, Webpack, Sass',
       hrefGithub: 'https://github.com/distincttt/GitHub-user-finder.git',
-      hrefDeploy: 'https://git-hub-user-finder-puce.vercel.app/',
+      hrefDeploy: 'https://git-hub-user-finder-eight.vercel.app/',
+   },
+   {
+      name: 'Board Games',
+      img: 'project5',
+      tech: 'React, TypeScript, Webpack, styled-components',
+      hrefGithub: 'https://github.com/cinamon1212/board-games.git',
+      hrefDeploy: 'https://board-games-cinamon1212.vercel.app/',
    },
 ]
