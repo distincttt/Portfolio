@@ -8,16 +8,6 @@ box-sizing:border-box;
 font-family: "Roboto Mono", sans-serif;
 }
 
-:root {
-    --nav-bg-color: rgba(255, 255, 255, .1);
-    --bg-color: rgba(0, 20, 0, 1);
-    --second-bg-color: rgba(0, 25, 0, 1);
-    --third-bg-color: #2F4F4F;
-    --main-color: #00FF7F;
-    --white-color: #fff;
-    --tab-list-color: #5F9EA0;
-}
-
 ::selection {
     background: var(--main-color);
     color: var(--bg-color);

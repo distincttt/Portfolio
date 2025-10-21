@@ -7,6 +7,7 @@ export const Section = styled.section`
    background: var(--bg-color);
    padding: 0 10%;
    backface-visibility: hidden;
+   transition: 1s ease;
    &:nth-child(even) {
       background: var(--second-bg-color);
    }
