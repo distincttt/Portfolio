@@ -36,4 +36,11 @@ export const works: Works = [
       hrefGithub: 'https://github.com/cinamon1212/board-games.git',
       hrefDeploy: 'https://board-games-cinamon1212.vercel.app/',
    },
+   {
+      name: 'Online Bank',
+      img: 'project6',
+      tech: 'Vue + Vuex + TypeScript + Vue CLI',
+      hrefGithub: 'https://github.com/distincttt/Online-bank.git',
+      hrefDeploy: 'https://vue-online-bank-c3fdd.web.app/',
+   },
 ]

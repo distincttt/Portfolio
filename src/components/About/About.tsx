@@ -27,7 +27,7 @@ export const About = (): JSX.Element => {
             <H2About>Обо мне</H2About>
             <H3>Frontend Developer</H3>
             <PAbout>Мой технологический стэк: </PAbout>
-            <PAbout>React, TypeScript, Redux Toolkit, styled-components</PAbout>
+            <PAbout>React / Vue + Redux / Vuex + TypeScript, PHP</PAbout>
             <AboutInfoWrapper>
                {infosAbout.map(({ name, lis, btn }, key) => (
                   <AboutInfoUlWrapper key={key}>
