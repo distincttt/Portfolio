@@ -3,14 +3,12 @@ import styled from 'styled-components'
 import { I, TabGrid, TabItem } from '../../../constant/style'
 
 export const TabGridPortfolioSkill = styled(TabGrid)`
-   display: block;
+   display: flex;
    width: 100%;
-   height: 100%;
 `
 export const TabItemPortfolioSkill = styled(TabItem)`
    width: 100%;
    margin: 0 auto;
-   margin-top: 10rem;
    padding: 4rem;
    gap: 1rem;
 
@@ -21,7 +19,7 @@ export const TabItemPortfolioSkill = styled(TabItem)`
 export const IPortfolioSkill = styled(I)`
    font-size: 1.4rem;
    position: relative;
-   top: 0.3rem;
+   top: 0.5rem;
 `
 export const LabelPortfolioSkill = styled.label`
    display: flex;

@@ -7,12 +7,12 @@ export const scis: Scis = [
       name: 'Github',
    },
    {
-      href: 'https://t.me/distincttt',
+      href: 'https://t.me/ilushakuzmin',
       className: 'bx bxl-telegram',
       name: 'Telegram',
    },
    {
-      href: 'mailto:ilia.kuzmin.01.01.01.01@mail.ru',
+      href: 'mailto:ilushakuzmin7@gmail.ru',
       className: 'bx bx-envelope',
       name: 'Email',
    },
