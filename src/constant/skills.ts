@@ -2,7 +2,6 @@ import { Skills } from '../shared/types'
 
 export const skills: Skills = [
    {
-      date: 'Декабрь 2023 - Январь 2025',
       name: 'Fronted-разработчик',
       company: 'Oscar (Муза)',
       text: [
@@ -13,7 +12,6 @@ export const skills: Skills = [
       ],
    },
    {
-      date: 'Февраль 2025 - Июнь 2026',
       name: 'Fronted-разработчик',
       company: 'Searchinform',
       text: [
