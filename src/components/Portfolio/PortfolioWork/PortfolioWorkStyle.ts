@@ -15,7 +15,10 @@ export const Info = styled.div`
    opacity: 0;
    transition: 0.3s;
 `
-export const TabGridPortfolioWork = styled(TabGrid)``
+export const TabGridPortfolioWork = styled(TabGrid)`
+   touch-action: pan-y;
+   -webkit-overflow-scrolling: touch;
+`
 export const TabItemPortfolioWork = styled(TabItem)`
    position: relative;
    &:hover {
@@ -41,6 +44,7 @@ export const TabItemPortfolioWork = styled(TabItem)`
       border-radius: 0.8rem;
       z-index: 1;
       opacity: 0;
+      pointer-events: none;
       transition: 0.3s;
    }
 `
