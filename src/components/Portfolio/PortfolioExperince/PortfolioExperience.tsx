@@ -13,9 +13,8 @@ import {
 export const PortfolioExperience = ({ active }: { active: boolean }): JSX.Element => {
    return (
       <TabGridPortfolioSkill $active={active}>
-         {skills.map(({ date, name, company, text }, key) => (
+         {skills.map(({ name, company, text }, key) => (
             <TabItemPortfolioSkill key={key}>
-               <H4EducationAndSkills>{date}</H4EducationAndSkills>
                <H4EducationAndSkills>{name}</H4EducationAndSkills>
                <H4EducationAndSkills>{company}</H4EducationAndSkills>
                {text.map((p) => (
