@@ -1,20 +1,18 @@
 import { skills } from '../../../constant/skills'
 
-import { H4EducationAndSkills } from '../../../constant/style'
+import { H4EducationAndSkills, TabGrid, TabItem } from '../../../constant/style'
 
 import {
    IPortfolioSkill,
    LabelPortfolioSkill,
    SpanPortfolioSkill,
-   TabGridPortfolioSkill,
-   TabItemPortfolioSkill,
 } from './PortfolioExperienceStyle'
 
 export const PortfolioExperience = ({ active }: { active: boolean }): JSX.Element => {
    return (
-      <TabGridPortfolioSkill $active={active}>
+      <TabGrid $active={active}>
          {skills.map(({ name, company, text }, key) => (
-            <TabItemPortfolioSkill key={key}>
+            <TabItem key={key}>
                <H4EducationAndSkills>{name}</H4EducationAndSkills>
                <H4EducationAndSkills>{company}</H4EducationAndSkills>
                {text.map((p) => (
@@ -23,8 +21,8 @@ export const PortfolioExperience = ({ active }: { active: boolean }): JSX.Elemen
                      <SpanPortfolioSkill>{p}</SpanPortfolioSkill>
                   </LabelPortfolioSkill>
                ))}
-            </TabItemPortfolioSkill>
+            </TabItem>
          ))}
-      </TabGridPortfolioSkill>
+      </TabGrid>
    )
 }
